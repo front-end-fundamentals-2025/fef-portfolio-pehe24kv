@@ -1,22 +1,57 @@
 * {
   background-color: #fcf6ec;
 }
+ul,
+h1 {
+  font-family: "Archivo", serif;
+}
+
+#logo {
+  font-family: "Archivo", serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 15pt;
+  color: #b5ccfa;
+}
+
 /* The menu bar */
 ul {
   list-style: none;
+  text-align: left;
   padding-left: 0;
+  text-transform: uppercase;
+  a {
+    color: black;
+    font-weight: bold;
+    font-size: 10pt;
+  }
 }
 
 /* The main picture */
 .main-img {
-  width: 40%;
+  width: 20%;
 }
 
 /* Text design */
 h1 {
   text-align: center;
   text-transform: uppercase;
+  font-weight: 900;
+  font-size: 30pt;
 }
 h2 {
   text-transform: uppercase;
+}
+
+/*Contact me*/
+#contact-me {
+  font-family: "Archivo", serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  a {
+    color: #b5ccfa;
+    font-size: 15pt;
+  }
 }
