@@ -1,0 +1,22 @@
+* {
+  background-color: #fcf6ec;
+}
+/* The menu bar */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* The main picture */
+.main-img {
+  width: 40%;
+}
+
+/* Text design */
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+h2 {
+  text-transform: uppercase;
+}
