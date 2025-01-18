@@ -2,8 +2,10 @@
   background-color: #fcf6ec;
 }
 ul,
-h1 {
+h1,
+h3 {
   font-family: "Archivo", serif;
+  text-transform: uppercase;
 }
 
 #logo {
@@ -20,7 +22,6 @@ ul {
   list-style: none;
   text-align: left;
   padding-left: 0;
-  text-transform: uppercase;
   a {
     color: black;
     font-weight: bold;
@@ -35,16 +36,15 @@ ul {
 
 /* Text design */
 h1 {
+  border-top: 2px solid black;
+  padding: 20px;
   text-align: center;
-  text-transform: uppercase;
   font-weight: 900;
   font-size: 30pt;
 }
 h2 {
   text-transform: uppercase;
 }
-
-/*Contact me*/
 #contact-me {
   font-family: "Archivo", serif;
   text-transform: uppercase;
@@ -54,4 +54,19 @@ h2 {
     color: #b5ccfa;
     font-size: 15pt;
   }
+}
+
+/*Contact me page*/
+h3 {
+  text-align: center;
+  font-weight: 900;
+  color: #b5ccfa;
+  font-size: 15pt;
+  border: 2px solid #b5ccfa;
+  padding: 2px;
+}
+.email,
+.number,
+h4 {
+  text-align: center;
 }
