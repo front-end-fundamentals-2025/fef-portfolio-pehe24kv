@@ -17,8 +17,14 @@ h3 {
   color: #b5ccfa;
 }
 
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+}
 /* The menu bar */
 ul {
+  display: flex;
   list-style: none;
   text-align: left;
   padding-left: 0;
@@ -29,7 +35,27 @@ ul {
   }
 }
 
-/* The main picture */
+li {
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 471px) {
+  header,
+  ul {
+    flex-direction: column;
+    align-items: start;
+  }
+  ul {
+    margin-top: 0;
+  }
+  li {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+}
+/* END */
+
+/* ABOUT ME PAGE */
 .main-img {
   width: 20%;
 }
@@ -55,18 +81,26 @@ h2 {
     font-size: 15pt;
   }
 }
+/* END */
 
-/*Contact me page*/
-h3 {
-  text-align: center;
-  font-weight: 900;
-  color: #b5ccfa;
-  font-size: 15pt;
-  border: 2px solid #b5ccfa;
-  padding: 2px;
-}
+/* CONTACT ME PAGE */
 .email,
 .number,
+h3,
 h4 {
+  list-style: none;
   text-align: center;
+  a {
+    color: #b5ccfa;
+  }
+}
+/* END */
+
+/* MY WORK PAGE - CATEGORY SECTION */
+.category-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.category-img {
+  width: 100%;
 }
