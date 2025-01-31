@@ -56,6 +56,8 @@ li {
   }
 }
 
+media
+
 /* END */
 
 /* ABOUT ME PAGE */
@@ -100,12 +102,30 @@ h4 {
 /* END */
 
 /* MY WORK PAGE - CATEGORY SECTION */
+
+figure {
+  margin-left: 0;
+}
+.category-img {
+  width: 100%;
+}
+
 .category-layout {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.category-img {
-  width: 100%;
+
+@media screen and (max-width: 1000px) {
+  .category-layout {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .category-layout {
+    grid-template-columns: 1fr;
+  }
 }
 /* END */
 
