@@ -100,14 +100,29 @@ h4 {
 /* END */
 
 /* MY WORK PAGE - CATEGORY SECTION */
-
+@keyframes changeImage {
+  0% {
+    background-image: url(../portfolioImages/coffetable\ book.jpeg);
+  }
+  100% {
+    background-image: url(../portfolioImages/coffe\ table\ book\ 2.png);
+  }
+}
 .coffetable {
   margin-left: 0;
-  background-image: url(../portfolioImages/coffe\ table\ book\ 1.png);
+  background-image: url(../portfolioImages/coffetable\ book.jpeg);
   height: 50vw;
   width: 50vw;
-  object-fit: cover;
+  object-fit: contain;
   background-repeat: no-repeat;
+  background-size: contain;
+  transition: background-image 0.5s ease-in-out;
+}
+.coffetable:hover {
+  animation: changeImage 0.5s forwards;
+}
+.coffetable:not(:hover) {
+  animation: changeImage 0.5s reverse forwards;
 }
 .category-img {
   width: 100%;
