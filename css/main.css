@@ -56,8 +56,6 @@ li {
   }
 }
 
-media
-
 /* END */
 
 /* ABOUT ME PAGE */
@@ -103,8 +101,13 @@ h4 {
 
 /* MY WORK PAGE - CATEGORY SECTION */
 
-figure {
+.coffetable {
   margin-left: 0;
+  background-image: url(../portfolioImages/coffe\ table\ book\ 1.png);
+  height: 50vw;
+  width: 50vw;
+  object-fit: cover;
+  background-repeat: no-repeat;
 }
 .category-img {
   width: 100%;
@@ -135,5 +138,4 @@ figure {
   padding-bottom: 20px;
   padding-top: 20px;
 }
-
 /* END */
