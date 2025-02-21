@@ -1,5 +1,7 @@
 * {
   background-color: #fcf6ec;
+  margin: 0;
+  padding: 0;
 }
 ul,
 h1,
@@ -17,6 +19,24 @@ h3 {
   color: #b5ccfa;
 }
 
+@keyframes logoBounce {
+  0% {
+    transform: scale(1);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#logo {
+  animation: logoBounce 1.2s ease-in-out;
+}
+
 /* HEADER */
 header {
   display: flex;
@@ -29,11 +49,11 @@ ul {
   list-style: none;
   text-align: left;
   padding-left: 0;
-  a {
-    color: black;
-    font-weight: bold;
-    font-size: 10pt;
-  }
+}
+ul a {
+  color: black;
+  font-weight: bold;
+  font-size: 10pt;
 }
 
 li {
@@ -59,7 +79,7 @@ li {
 /* END */
 
 /* ABOUT ME PAGE */
-#main-img {
+#main {
   width: 20%;
 }
 
@@ -71,18 +91,21 @@ h1 {
   font-weight: 900;
   font-size: 30pt;
 }
+
 h2 {
   text-transform: uppercase;
 }
+
 #contact-me {
   font-family: "Archivo", serif;
   text-transform: uppercase;
   text-align: center;
   font-weight: 900;
-  a {
-    color: #b5ccfa;
-    font-size: 15pt;
-  }
+}
+
+#contact-me a {
+  color: #b5ccfa;
+  font-size: 15pt;
 }
 /* END */
 
@@ -93,51 +116,40 @@ h3,
 h4 {
   list-style: none;
   text-align: center;
-  a {
-    color: #b5ccfa;
-  }
+}
+
+.email,
+.number,
+h3,
+h4 {
+  color: #b5ccfa;
 }
 /* END */
-
-/* MY WORK PAGE - CATEGORY SECTION */
-@keyframes changeImage {
-  0% {
-    background-image: url(../portfolioImages/coffetable\ book.jpeg);
-  }
-  100% {
-    background-image: url(../portfolioImages/coffe\ table\ book\ 2.png);
-  }
-}
-.coffetable {
-  margin-left: 0;
-  background-image: url(../portfolioImages/coffetable\ book.jpeg);
-  height: 50vw;
-  width: 50vw;
-  background-repeat: no-repeat;
-  transition: background-image 0.5s ease-in-out;
-}
-.coffetable:hover {
-  animation: changeImage 0.5s forwards;
-}
-.coffetable:not(:hover) {
-  animation: changeImage 0.5s reverse forwards;
-}
-.loui {
-  background-image: url(../portfolioImages/loui.jpeg);
-  height: 50vw;
-  width: 50vw;
-  object-fit: cover;
-  background-size: cover;
-}
 
 .category-layout {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.category-img {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-layout figcaption {
+  font-size: 14pt;
+  font-weight: 700;
+  color: black;
+  margin-top: 10px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1000px) {
   .category-layout {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
